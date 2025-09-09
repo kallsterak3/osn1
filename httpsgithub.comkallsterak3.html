@@ -1,0 +1,475 @@
+> стас:
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameHax - Лучшие читы для игр</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #0a0a1a;
+            color: #fff;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                              url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="%230a0a1a"/><path d="M0 0L100 100" stroke="%23152d5a" stroke-width="1"/><path d="M100 0L0 100" stroke="%23152d5a" stroke-width="1"/></svg>');
+        }
+        
+        header {
+            background: linear-gradient(90deg, #152d5a, #1a3b7a);
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+            position: relative;
+            border-bottom: 2px solid #00b7ff;
+        }
+        
+        .logo {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #00eaff;
+            text-shadow: 0 0 10px rgba(0, 234, 255, 0.5);
+            margin-bottom: 10px;
+        }
+        
+        .logo span {
+            color: #ff3860;
+        }
+        
+        nav {
+            background-color: rgba(10, 20, 40, 0.9);
+            padding: 10px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #00eaff;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            background: rgba(15, 30, 60, 0.6);
+            border-radius: 10px;
+            margin: 20px 0;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #00eaff;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: linear-gradient(90deg, #ff3860, #ff3860);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 10px;
+            transition: all 0.3s;
+            box-shadow: 0 4px 10px rgba(255, 56, 96, 0.4);
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(255, 56, 96, 0.6);
+        }
+        
+        .btn-secondary {
+            background: linear-gradient(90deg, #152d5a, #1a3b7a);
+            box-shadow: 0 4px 10px rgba(21, 45, 90, 0.4);
+        }
+        
+        .btn-secondary:hover {
+            box-shadow: 0 6px 15px rgba(21, 45, 90, 0.6);
+        }
+        
+        .games {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin: 40px 0;
+        }
+        
+        .game-card {
+            background: rgba(15, 30, 60, 0.7);
+            border-radius: 10px;
+            overflow: hidden;
+            width: 280px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+
+> стас:
+transition: transform 0.3s;
+        }
+        
+        .game-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .game-img {
+            height: 160px;
+            background-color: #1a3b7a;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+        }
+        
+        .game-content {
+            padding: 20px;
+        }
+        
+        .game-content h3 {
+            margin-bottom: 10px;
+            color: #00eaff;
+        }
+        
+        .features {
+            background: rgba(15, 30, 60, 0.6);
+            border-radius: 10px;
+            padding: 30px;
+            margin: 40px 0;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+        }
+        
+        .features h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #00eaff;
+        }
+        
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        
+        .feature {
+            background: rgba(25, 45, 80, 0.5);
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .feature i {
+            font-size: 2.5rem;
+            color: #ff3860;
+            margin-bottom: 15px;
+        }
+        
+        .download-section {
+            text-align: center;
+            padding: 40px;
+            background: rgba(15, 30, 60, 0.6);
+            border-radius: 10px;
+            margin: 40px 0;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+        }
+        
+        .support {
+            background: rgba(15, 30, 60, 0.6);
+            border-radius: 10px;
+            padding: 30px;
+            margin: 40px 0;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+        }
+        
+        .support h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #00eaff;
+        }
+        
+        .faq {
+            margin-top: 20px;
+        }
+        
+        .question {
+            background: rgba(25, 45, 80, 0.5);
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+        
+        .answer {
+            padding: 15px;
+            background: rgba(35, 55, 90, 0.3);
+            border-radius: 8px;
+            margin-bottom: 15px;
+            display: none;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: rgba(10, 20, 40, 0.9);
+            margin-top: 40px;
+            border-top: 2px solid #00b7ff;
+        }
+        
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .modal-content {
+            background: #0f1e3d;
+            padding: 30px;
+            border-radius: 10px;
+            max-width: 500px;
+            width: 90%;
+            box-shadow: 0 0 30px rgba(0, 234, 255, 0.3);
+            position: relative;
+        }
+        
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 24px;
+            cursor: pointer;
+            color: #ff3860;
+        }
+        
+        .info-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            background: #ff3860;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+
+> стас:
+justify-content: center;
+            font-weight: bold;
+            font-size: 1.5rem;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(255, 56, 96, 0.5);
+            z-index: 100;
+        }
+        
+        @media (max-width: 768px) {
+            .games {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .game-card {
+                width: 100%;
+                max-width: 350px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Game<span>Hax</span></div>
+        <nav>
+            <a href="#home">Главная</a>
+            <a href="#games">Игры</a>
+            <a href="#download">Загрузка</a>
+            <a href="#support">Поддержка</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="home" class="hero">
+            <h1>Лучшие читы для популярных игр</h1>
+            <p>Получите преимущество с нашими премиум-читами для Minecraft, CS2, Dead by Daylight, Fortnite и других игр. Необнаруживаемость и максимальная производительность!</p>
+            <a href="#download" class="btn">Скачать сейчас</a>
+            <a href="#games" class="btn btn-secondary">Выбрать игру</a>
+        </section>
+
+        <section id="games" class="games">
+            <div class="game-card">
+                <div class="game-img">⛏️</div>
+                <div class="game-content">
+                    <h3>Minecraft</h3>
+                    <p>Чит на все версии игры с функциями: Fly, X-Ray, KillAura и многими другими.</p>
+                    <a href="#download" class="btn">Скачать</a>
+                </div>
+            </div>
+            
+            <div class="game-card">
+                <div class="game-img">🔫</div>
+                <div class="game-content">
+                    <h3>CS2</h3>
+                    <p>Wallhack, AimBot, Radar Hack и другие функции для полного доминирования.</p>
+                    <a href="#download" class="btn">Скачать</a>
+                </div>
+            </div>
+            
+            <div class="game-card">
+                <div class="game-img">👻</div>
+                <div class="game-content">
+                    <h3>Dead by Daylight</h3>
+                    <p>Видите всех выживших, телепортация, автоматическое уклонение и многое другое.</p>
+                    <a href="#download" class="btn">Скачать</a>
+                </div>
+            </div>
+            
+            <div class="game-card">
+                <div class="game-img">🏰</div>
+                <div class="game-content">
+                    <h3>Fortnite</h3>
+                    <p>AimBot, ESP, быстрое строительство и сбор ресурсов без ограничений.</p>
+                    <a href="#download" class="btn">Скачать</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <h2>Почему выбирают нас?</h2>
+            <div class="feature-grid">
+                <div class="feature">
+                    <i>🔒</i>
+                    <h3>Безопасность</h3>
+                    <p>Наши читы остаются необнаруженными системой защиты игр.</p>
+                </div>
+                <div class="feature">
+                    <i>⚡</i>
+                    <h3>Производительность</h3>
+                    <p>Оптимизированные читы не нагружают систему.</p>
+                </div>
+                <div class="feature">
+                    <i>🔄</i>
+                    <h3>Обновления</h3>
+                    <p>Регулярные обновления после каждого патча игры.</p>
+                </div>
+                <div class="feature">
+                    <i>🎮</i>
+                    <h3>Поддержка</h3>
+                    <p>Круглосуточная техническая поддержка для наших клиентов.</p>
+                </div>
+            </div>
+        </section>
+
+> стас:
+<section id="download" class="download-section">
+            <h2>Скачайте наш чит-программу</h2>
+            <p>Нажмите на кнопку ниже, чтобы скачать установщик. После установки выберите нужную игру и активируйте функции.</p>
+            <a href="https://workupload.com/file/rVuKCF4ZN9E" class="btn">Скачать сейчас</a>
+            <p style="margin-top: 15px; font-size: 0.9rem;">Версия 2.4.1 | Последнее обновление: 2 дня назад</p>
+        </section>
+
+        <section id="support" class="support">
+            <h2>Поддержка</h2>
+            <p>Если у вас возникли проблемы с установкой или использованием наших продуктов, обратитесь в службу поддержки.</p>
+            
+            <div class="faq">
+                <div class="question" onclick="toggleAnswer(1)">Как установить читы?</div>
+                <div class="answer" id="answer1">Скачайте установщик, запустите его и следуйте инструкциям. После установки откройте программу, выберите нужную игру и активируйте желаемые функции.</div>
+                
+                <div class="question" onclick="toggleAnswer(2)">Чит не работает. Что делать?</div>
+                <div class="answer" id="answer2">Убедитесь, что у вас установлены все последние обновления игры и чита. Если проблема persists, обратитесь в техническую поддержку.</div>
+                
+                <div class="question" onclick="toggleAnswer(3)">Могут ли меня забанить за использование читов?</div>
+                <div class="answer" id="answer3">Наши читы используют передовые технологии скрытности, но всегда есть риск быть замеченным. Используйте на свой страх и риск.</div>
+            </div>
+            
+            <p style="margin-top: 20px; text-align: center;">
+                Email поддержки: <a href="mailto:support@gamehax.fake" style="color: #00eaff;">no</a><br>
+                Discord сервер: <a href="#" style="color: #00eaff;">no</a>
+            </p>
+        </section>
+    </div>
+
+    <footer>
+        <p>GameHax &copy; 2023. Все права "защищены".</p>
+    </footer>
+
+    <div class="info-btn" onclick="openModal()">i</div>
+
+    <div id="infoModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Информация о сайте</h2>
+        </div>
+    </div>
+
+    <script>
+        function toggleAnswer(id) {
+            const answer = document.getElementById('answer' + id);
+            answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+        }
+        
+        function openModal() {
+            document.getElementById('infoModal').style.display = 'flex';
+        }
+        
+        function closeModal() {
+            document.getElementById('infoModal').style.display = 'none';
+        }
+        
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            const modal = document.getElementById('infoModal');
+            if (event.target === modal) {
+                closeModal();
+            }
+        }
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
